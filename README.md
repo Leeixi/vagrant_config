@@ -1,3 +1,3 @@
-# vagrant
-Vagrant and corresponding Vagrantfiles
+# vagrant_config
+Used for quick and easy VM spin
 
