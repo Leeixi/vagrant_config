@@ -5,6 +5,13 @@ ENV['VAGRANT_NO_PARALLEL'] = 'yes'
 
 Vagrant.configure(2) do |config|
 
+    # problems with non-existing network qemu:///system
+    config.vm.provider :libvirt do |libvirt|
+    libvirt.qemu_use_session = false
+    # if the above doesn't work, try uncommenting the following instead
+    #libvirt.uri = 'qemu:///system'
+  end
+
   config.vm.provision "shell", path: "bootstrap.sh"
 
   NodeCount = 2
