@@ -1,8 +1,8 @@
 # vagrant_config
 Used for quick and easy VM spin
 
-##Prerequisite
-Installed Vagrant, libvrt plugin for Vagrant.
+## Prerequisite
+Installed Vagrant and libvrt plugin for Vagrant.
 
 ## Usage
 CD to OS vagrant files location and run:
